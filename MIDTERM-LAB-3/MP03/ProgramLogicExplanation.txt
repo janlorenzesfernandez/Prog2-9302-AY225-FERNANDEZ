@@ -1,0 +1,11 @@
+Java Program Logic
+The Java program uses a Scanner to capture the user's file path and search keyword, then initializes a BufferedReader to read the CSV file line-by-line for
+memory efficiency. As each line is retrieved, the program converts both the line and the keyword to lowercase to ensure a case-insensitive search. If the 
+contains() method returns true, the entire record is printed to the console. The program includes a try-catch block to handle potential IOExceptions, such 
+as an invalid file path, and uses a boolean flag to notify the user if no matches were found.
+
+JavaScript Program Logic
+This Node.js script employs the readline module to asynchronously prompt the user for the dataset location and the target search term. It reads the entire 
+file content using the fs (File System) module and splits the data into an array of strings based on newline characters. The logic then applies the .filter()
+method to iterate through the array, identifying rows that include the specified keyword regardless of casing. Finally, the matching results are displayed 
+in the terminal, with an error handling routine to catch issues like missing files or permission errors.

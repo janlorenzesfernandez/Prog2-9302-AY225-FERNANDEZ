@@ -1,0 +1,11 @@
+Java Logic
+The program prompts the user for a CSV path and uses a BufferedReader to read the file sequentially. It immediately calls readLine() once to skip the header
+row, ensuring only actual data entries are counted. As it loops through the remaining lines, it checks if each string is non-empty using trim().isEmpty()
+before incrementing a counter variable. Once the end of the file is reached, the final count is displayed, providing a total of valid data records within
+the set.
+
+JavaScript Logic
+After capturing the file path from the user, the script reads the CSV file and converts it into an array where each element represents a line. It uses the
+.filter() method to remove any empty strings or whitespace-only lines that might exist at the end of the file. The program calculates the total number of
+records by taking the length of this filtered array and subtracting one to account for the header row. The result is then output to the console, handled
+within a try-catch block for safety.

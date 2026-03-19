@@ -1,0 +1,11 @@
+Java Logic
+The program asks the user for the file path and a specific column index (starting at 0) to be extracted. It reads the CSV file line by line, using the
+split(",") method on each string to transform the row into an array of individual cell values. The logic then checks if the requested index exists within
+the current row's array to prevent ArrayIndexOutOfBounds errors. If valid, the value at that specific index is trimmed of whitespace and printed to the
+console.
+
+JavaScript Logic
+This script prompts the user for both the dataset location and the target column index via the readline interface. It reads the CSV data and splits it into
+rows, then iterates through each row using the .forEach() method. Each row string is further split by commas into a temporary array, and the element at the
+user-specified index is accessed. The program displays these extracted values one by one, ensuring that only rows containing data for that specific column
+are processed.
